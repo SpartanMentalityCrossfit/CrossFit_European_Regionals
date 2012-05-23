@@ -22,7 +22,7 @@
 			var workoutStart = workout.starttime;
 
 			var workoutEnd = new Date(workoutStart);
-			workoutEnd.setMinutes(workout.heats * workout.heattimelimit);
+			workoutEnd.setMinutes(workout.heatcount * workout.heattimelimit);
 
 			var currentDate = new Date();
 
@@ -35,7 +35,7 @@
 			contentMarkup += "<h4>" + workout.name + " (" + workout.starttime.getHours() + ":" + minutes + ")</h4>";
 			contentMarkup += "<table><tbody>";
 
-			for (var j = 0; j < workout.heats; j++) {
+			for (var j = 0; j < workout.heatcount; j++) {
 				var starttime = new Date(workout.starttime);
 				starttime.setMinutes(starttime.getMinutes() + workout.heattimelimit * j);
 
