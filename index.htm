@@ -1,0 +1,70 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>CrossFit Regionals Europe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<link rel="stylesheet" href="Content/jquery.mobile-1.1.0.min.css" />
+	<script src="Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="Scripts/jquery.mobile-1.1.0.min.js" type="text/javascript"></script>
+	<script src="Scripts/programmedata.js" type="text/javascript"></script>
+	<script src="Scripts/programme.js" type="text/javascript"></script>
+	<script src="Scripts/workoutdata.js" type="text/javascript"></script>
+	<script src="Scripts/workout.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).bind("pagebeforechange", function (e, data) {
+			if (typeof data.toPage === "string") {
+				var u = $.mobile.path.parseUrl(data.toPage);
+
+				var programmere = /^#programme/;
+				var workoutre = /^#workout/;
+				
+				if (u.hash.search(programmere) !== -1) {
+					showProgramme(u, data.options);
+
+					e.preventDefault();
+				}
+				else if (u.hash.search(workoutre) !== -1) {
+					showWorkout(u, data.options);
+
+					e.preventDefault();
+				}
+			}
+		});
+	</script>
+</head>
+<body>
+	<div data-role="page" id="main">
+		<div data-role="header" data-position="fixed">
+			<h1>Main menu</h1>
+		</div>
+		<div data-role="content">
+			<h3>Programme</h3>
+			<p><a href="#programme?day=friday" data-role="button" data-transition="slide">Friday</a></p>
+			<p><a href="#programme?day=saturday" data-role="button" data-transition="slide">Saturday</a></p>
+			<p><a href="#programme?day=sunday" data-role="button" data-transition="slide">Sunday</a></p>
+			<h3>Workouts</h3>
+			<p><a href="#workout?type=individual" data-role="button">Individual</a></p>
+			<p><a href="#workout?type=team" data-role="button">Teams</a></p>
+		</div>
+		<div data-role="footer" data-theme="d" data-position="fixed" data-id="footie">
+			<h4>Go Spartan Warriors!</h4>
+		</div>
+	</div>
+	<div data-role="page" id="programme" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed"><h1></h1></div>
+		<div data-role="content"></div>
+		<div data-role="footer" data-theme="d" data-position="fixed" data-id="footie">
+			<h4>Go Spartan Warriors!</h4>
+		</div>
+	</div>
+	<div data-role="page" id="workout" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed"><h1></h1></div>
+		<div data-role="content"></div>
+		<div data-role="footer" data-theme="d" data-position="fixed" data-id="footie">
+			<h4>Go Spartan Warriors!</h4>
+		</div>
+	</div>
+</body>
+</html>
