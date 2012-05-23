@@ -12,7 +12,9 @@
 
 		$header.find("h1").html(dayProgramme.header);
 
-		var contentMarkup = "<h3>" + dayProgramme.subtitle + "</h3><div data-role=\"collapsible-set\">";
+		var contentMarkup = "<p>Spartan participation will mark the heat with a blue color</p>";
+		
+		contentMarkup += "<h3>" + dayProgramme.subtitle + "</h3><div data-role=\"collapsible-set\">";
 
 		var workouts = dayProgramme.workouts;
 
