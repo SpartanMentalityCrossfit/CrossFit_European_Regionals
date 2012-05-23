@@ -9,8 +9,6 @@
 						heattimelimit: 20,
 						heatcount: 3,
 						heats: [
-							{
-								competitors:
 								[
 									"CrossFit Clithere A-Team",
 									"CrossFit SA1",
@@ -20,10 +18,7 @@
 									"CrossFit Oslo",
 									"CrossFit M1",
 									"Team Central Manchester"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"CrossFit Nordvest",
 									"Spartans Warriors",
@@ -33,10 +28,7 @@
 									"CrossFit Falun Måndagsklubben",
 									"CrossFit Plymouth",
 									"CrossFit Basel"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"CrossFit Reykjavík",
 									"CrossFit BC ísland",
@@ -49,7 +41,6 @@
 									"Team DC",
 									"CrossFit Bath"
 								]
-							}
 						]
 					},
 					{
@@ -58,8 +49,6 @@
 						heattimelimit: 12,
 						heatcount: 4,
 						heats: [
-							{
-								competitors:
 								[
 									"Ellie Carter-Silk",
 									"Sarah Cahill",
@@ -69,10 +58,7 @@
 									"Inga Ingadottiir",
 									"Claire Crowley",
 									"Þórey Hannesdóttir"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Patricia Strenius",
 									"Caryl James",
@@ -82,10 +68,7 @@
 									"Carla Nunes da Costa",
 									"Anna Fernette",
 									"Elin Hansson"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Nicola Simpson",
 									"Marianna Tzourtzek",
@@ -96,10 +79,7 @@
 									"Hrund Scheving",
 									"Marlene Andersson",
 									"Helena Hugosson"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Annie Thorisdottir",
 									"Katrin Tanja Davidsdottir",
@@ -114,7 +94,6 @@
 									"Lucy Rae",
 									"Malin Nyström"	
 								]
-							}
 						]
 					},
 					{
@@ -123,8 +102,6 @@
 						heattimelimit: 12,
 						heatcount: 5,
 						heats: [
-							{
-								competitors:
 								[
 									"Gigord Yohann",
 									"Dadi Hrafn Sveinbjarnarson",
@@ -137,10 +114,7 @@
 									"Rikard Lanner",
 									"Dellus West",
 									"Arnar Sigurðsson"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Jonathan Bullough",
 									"Owen Satterley",
@@ -153,10 +127,7 @@
 									"TImmy Thernström",
 									"Žiga Urh",
 									"Ramon Gysin"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Robert Manlove",
 									"Erwin van Beek",
@@ -169,10 +140,7 @@
 									"Leigh Bevan",
 									"Gregor Schregle",
 									"Aristotelis Giannos"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Jakob Magnússon",
 									"Matteo Piran",
@@ -185,10 +153,7 @@
 									"Mareck Bigler",
 									"Hunter Lea",
 									"Jordan Wallace"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Stefano Migliorini",
 									"Frederik Aegidius",
@@ -203,7 +168,6 @@
 									"Adam Shackell",
 									"Christer Idland"
 								]
-							}
 						]
 					},
 					{
@@ -212,8 +176,6 @@
 						heattimelimit: 30,
 						heatcount: 3,
 						heats: [
-							{
-								competitors:
 								[
 									"CrossFit Clithere A-Team",
 									"CrossFit SA1",
@@ -223,10 +185,7 @@
 									"CrossFit Oslo",
 									"CrossFit M1",
 									"Team Central Manchester"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"CrossFit Nordvest",
 									"Spartans Warriors",
@@ -236,10 +195,7 @@
 									"CrossFit Falun Måndagsklubben",
 									"CrossFit Plymouth",
 									"CrossFit Basel"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"CrossFit Reykjavík",
 									"CrossFit BC ísland",
@@ -252,7 +208,6 @@
 									"Team DC",
 									"CrossFit Bath"
 								]
-							}
 						]
 					},
 					{
@@ -261,8 +216,6 @@
 						heattimelimit: 20,
 						heatcount: 3,
 						heats: [
-							{
-								competitors:
 								[
 									"Carla Nunes da Costa",
 									"Anna Fernette",
@@ -275,10 +228,7 @@
 									"Inga Ingadottiir",
 									"Claire Crowley",
 									"Þórey Hannesdóttir"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Caroline Fryklund",
 									"Essi Koskinen",
@@ -291,10 +241,7 @@
 									"Nadine Leinweber",
 									"Linda Aasted Pedersen",
 									"Rachel Blumberg"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Annie Thorisdottir",
 									"Katrin Tanja Davidsdottir",
@@ -312,7 +259,6 @@
 									"Marianna Tzourtzek",
 									"Tea Tähtinen"
 								]
-							}
 						]
 					},
 					{
@@ -321,8 +267,6 @@
 						heattimelimit: 20,
 						heatcount: 4,
 						heats: [
-							{
-								competitors:
 								[
 									"Žiga Urh",
 									"Ramon Gysin",
@@ -337,10 +281,7 @@
 									"Rikard Lanner",
 									"Dellus West",
 									"Arnar Sigurðsson"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Beni Bachmann",
 									"Kristoffer Klausen",
@@ -356,10 +297,7 @@
 									"Torrey Hoffman",
 									"Marcus Herou",
 									"TImmy Thernström"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Johannes Gustavsson",
 									"André Svanevik",
@@ -375,10 +313,7 @@
 									"Jindrich Tovaryš",
 									"Lukas Högberg",
 									"Jonny Smyth"
-								]
-							},
-							{
-								competitors:
+								],
 								[
 									"Stefano Migliorini",
 									"Frederik Aegidius",
@@ -396,7 +331,6 @@
 									"Matteo Piran",
 									"Riccardo Donati"
 								]
-							}
 						]
 					}
 				]

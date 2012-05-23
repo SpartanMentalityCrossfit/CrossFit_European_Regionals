@@ -33,22 +33,38 @@
 			var minutes = workout.starttime.getMinutes() < 10 ? "0" + workout.starttime.getMinutes() : workout.starttime.getMinutes();
 
 			contentMarkup += "<h4>" + workout.name + " (" + workout.starttime.getHours() + ":" + minutes + ")</h4>";
-			contentMarkup += "<table><tbody>";
 
-			for (var j = 0; j < workout.heatcount; j++) {
-				var starttime = new Date(workout.starttime);
-				starttime.setMinutes(starttime.getMinutes() + workout.heattimelimit * j);
+			if (workout.heats) {
+				for (var k = 0; k < workout.heats.length; k++) {
+					var heat = workout.heats[k];
 
-				var endtime = new Date(workout.starttime);
-				endtime.setMinutes(workout.starttime.getMinutes() + workout.heattimelimit * (j + 1));
+					var isSpartan = $.inArray("Spartans Warriors", heat) != -1 || $.inArray("Anders Galaly", heat) != -1;
 
-				var starttimeminutes = starttime.getMinutes() < 10 ? "0" + starttime.getMinutes() : starttime.getMinutes();
-				var endtimeminutes = endtime.getMinutes() < 10 ? "0" + endtime.getMinutes() : endtime.getMinutes();
+					contentMarkup += "<div data-role=\"collapsible\"" + (isSpartan ? "data-theme=\"b\"" : "") + ">";
 
-				contentMarkup += "<tr><td>" + starttime.getHours() + ":" + starttimeminutes + " - " + endtime.getHours() + ":" + endtimeminutes + "</td><td>Heat " + (j + 1) + "</td></tr>";
+					contentMarkup += "<h3>Heat " + (k + 1) + " (" + findTime(workout.starttime, workout.heattimelimit, k) + " - " + findTime(workout.starttime, workout.heattimelimit, k + 1) + ")</h3>";
+
+					contentMarkup += "<table><tbody>";
+
+					for (var l = 0; l < heat.length; l++) {
+						contentMarkup += "<tr><td>" + heat[l] + "</td></tr>";
+					}
+
+					contentMarkup += "</tbody></table>";
+
+					contentMarkup += "</div>";
+				}
+			} else {
+				contentMarkup += "<table><tbody>";
+				
+				for (var j = 0; j < workout.heatcount; j++) {
+					contentMarkup += "<tr><td>Heat " + (j + 1) + "</td><td>" + findTime(workout.starttime, workout.heattimelimit, j) + " - " + findTime(workout.starttime, workout.heattimelimit, j + 1) + "</td></tr>";
+				}
+
+				contentMarkup += "</tbody></table>";
 			}
-
-			contentMarkup += "</tbody></table></div>";
+			
+			contentMarkup += "</div>";
 		}
 
 		contentMarkup += "</div>";
@@ -64,4 +80,14 @@
 
 		$.mobile.changePage($page, options);
 	}
+}
+
+function findTime(inputDate, heattimelimit, round) {
+	var outputDate = new Date(inputDate);
+
+	outputDate.setMinutes(outputDate.getMinutes() + heattimelimit * round);
+
+	var minutes = outputDate.getMinutes() < 10 ? "0" + outputDate.getMinutes() : outputDate.getMinutes();
+
+	return "" + outputDate.getHours() + ":" + minutes;
 }
