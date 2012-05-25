@@ -389,7 +389,50 @@
 						name: "Womens workout 3",
 						starttime: new Date(2012, 5, 26, 11, 10, 0, 0),
 						heattimelimit: 12,
-						heatcount: 4
+						heatcount: 3,
+						heats: [
+								[
+									"Elin Hansson",
+									"Ellie Carter-Silk",
+									"Linda Aasted Pedersen",
+									"Anne Waage",
+									"Rachel Blumberg",
+									"Julia Carlsson",
+									"Anna Fernette",
+									"Nuša Cernuta",
+									"Caryl James",
+									"Þórey Hannesdóttir",
+									"Helena Hugosson"
+								],
+								[
+									"Sara Ellegaard Andreasen",
+									"Lucy Rae",
+									"Naomi Rinsampessy",
+									"Malin Nyström",
+									"Anna Hulda Ólafsdóttir",
+									"Essi Koskinen",
+									"Inga Ingadottiir",
+									"Marlene Andersson",
+									"Marianna Tzourtzek",
+									"Patricia Strenius",
+									"Tea Tähtinen",
+									"Nadine Leinweber"
+								],
+								[
+									"Annie Thorisdottir",
+									"Katrin Tanja Davidsdottir",
+									"Ellinor Rehnström",
+									"Thuridur Erla Helgadottir",
+									"Caroline Fryklund",
+									"Louise Åkesson",
+									"Carla Nunes da Costa",
+									"Hrund Scheving",
+									"Nicola Simpson",
+									"Martina Barbaro",
+									"Hjördís Óskarsdóttir",
+									"Alahna Gibbs",
+								]
+						]
 					},
 					{
 						name: "Teams workout 4",
