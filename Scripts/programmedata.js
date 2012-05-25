@@ -343,7 +343,41 @@
 						name: "Teams workout 3",
 						starttime: new Date(2012, 5, 26, 9, 0, 0, 0),
 						heattimelimit: 15,
-						heatcount: 3
+						heatcount: 3,
+						heats: [
+								[
+									"CrossFit Leeds",
+									"CrossFit Basel",
+									"CrossFit Plymouth",
+									"CrossFit Dublin",
+									"Team Central Manchester",
+									"CrossFit Nordvest",
+									"CrossFit Oslo",
+									"CrossFit M1"
+								],
+								[
+									"Landstuhl CrossFit",
+									"CrossFit Solid",
+									"French Invictus Team",
+									"CrossFit Malmö The Other guys",
+									"CrossFit BC ísland",
+									"CrossFit Pori",
+									"CrossFit Clithere A-Team",
+									"CrossFit Rota"
+								],
+								[
+									"CrossFit Reykjavík",
+									"Team Butchers Lab",
+									"CrossFit Bath",
+									"CrossFit Sport",
+									"Team Butchers Garage",
+									"Team DC",
+									"Team CFH Iceland",
+									"CrossFit Nordic 1",
+									"CrossFit Falun Måndagsklubben",
+									"Spartans Warriors"
+								]
+						]
 					},
 					{
 						name: "Mens workout 3",
