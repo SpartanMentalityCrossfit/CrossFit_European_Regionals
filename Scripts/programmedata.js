@@ -383,7 +383,69 @@
 						name: "Mens workout 3",
 						starttime: new Date(2012, 5, 26, 10, 0, 0, 0),
 						heattimelimit: 12,
-						heatcount: 5
+						heatcount: 5,
+						heats: [
+								[
+									"Žiga Urh",
+									"Kristoffer Klausen",
+									"Leigh Bevan",
+									"Lukas Esslinger",
+									"Kyle Micallef",
+									"Arnar Sigurðsson",
+									"Aristotelis Giannos",
+									"Alexander Alexandrov",
+									"Karl Thorpe"
+								],
+								[
+									"Francesco Ajello",
+									"Owen Satterley",
+									"Anders Galaly",
+									"Mattia Balella",
+									"Ramon Gysin",
+									"Robert Manlove",
+									"Dellus West",
+									"Gregor Schregle",
+									"Johannes Gustavsson",
+									"Stefano Migliorini",
+								],
+								[
+									"Jindrich Tovaryš",
+									"Jonathan Bullough",
+									"Rikard Lanner",
+									"Tom Bold",
+									"TImmy Thernström",
+									"Kevin Naarden",
+									"Hunter Lea",
+									"Alex Clarke",
+									"Gigord Yohann",
+									"Jordan Wallace"
+								],
+								[
+									"Hannes Heins",
+									"Dadi Hrafn Sveinbjarnarson",
+									"Lukas Högberg",
+									"André Svanevik",
+									"Adam Shackell",
+									"Beni Bachmann",
+									"Eric Ericson",
+									"Auke Toussaint",
+									"Richard Vanmeerbeek",
+									"Steven Fawcett"
+								],
+								[
+									"Lacee Kovacs",
+									"Frederik Aegidius",
+									"Númi Snær Katrínarson",
+									"Mikko Aronpää",
+									"Marcus Herou",
+									"Mareck Bigler",
+									"James Goulden",
+									"Philip Bengtsson",
+									"Rob Martin",
+									"Riccardo Donati",
+									"Jakob Magnússon"
+								]
+						]
 					},
 					{
 						name: "Womens workout 3",
