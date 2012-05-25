@@ -406,7 +406,7 @@
 									"Dellus West",
 									"Gregor Schregle",
 									"Johannes Gustavsson",
-									"Stefano Migliorini",
+									"Stefano Migliorini"
 								],
 								[
 									"Jindrich Tovaryš",
@@ -492,7 +492,7 @@
 									"Nicola Simpson",
 									"Martina Barbaro",
 									"Hjördís Óskarsdóttir",
-									"Alahna Gibbs",
+									"Alahna Gibbs"
 								]
 						]
 					},
