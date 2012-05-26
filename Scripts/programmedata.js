@@ -500,7 +500,36 @@
 						name: "Teams workout 4",
 						starttime: new Date(2012, 5, 26, 12, 18, 0, 0),
 						heattimelimit: 30,
-						heatcount: 3
+						heatcount: 3,
+						heats: [
+								[
+									"CrossFit BC ísland",
+									"CrossFit Rota",
+									"CrossFit Leeds",
+									"CrossFit Basel",
+									"CrossFit Oslo",
+									"CrossFit Dublin"
+								],
+								[
+									"Spartans Warriors",
+									"CrossFit Malmö The Other guys",
+									"Landstuhl CrossFit",
+									"French Invictus Team",
+									"CrossFit Solid",
+									"CrossFit Falun Måndagsklubben",
+									"CrossFit Pori"
+								],
+								[
+									"CrossFit Reykjavík",
+									"CrossFit Sport",
+									"Team Butchers Lab",
+									"Team Butchers Garage",
+									"Team DC",
+									"CrossFit Bath",
+									"Team CFH Iceland",
+									"CrossFit Nordic 1"
+								]
+						]
 					},
 					{
 						name: "Mens workout 4",
