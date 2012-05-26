@@ -443,7 +443,8 @@
 									"Philip Bengtsson",
 									"Rob Martin",
 									"Riccardo Donati",
-									"Jakob Magnússon"
+									"Jakob Magnússon",
+									"Christer Idland"
 								]
 						]
 					},
@@ -535,13 +536,112 @@
 						name: "Mens workout 4",
 						starttime: new Date(2012, 5, 26, 14, 3, 0, 0),
 						heattimelimit: 30,
-						heatcount: 5
+						heatcount: 5,
+						heats: [
+								[
+									"Dellus West",
+									"Kristoffer Klausen",
+									"Arnar Sigurðsson",
+									"Lukas Esslinger",
+									"Alexander Alexandrov",
+									"Kyle Micallef",
+									"Karl Thorpe",
+									"Aristotelis Giannos"
+								],
+								[
+									"Francesco Ajello",
+									"Hunter Lea",
+									"Mattia Balella",
+									"Steven Fawcett",
+									"Jindrich Tovaryš",
+									"Jonathan Bullough",
+									"Gregor Schregle",
+									"Stefano Migliorini",
+									"Jordan Wallace"
+								],
+								[
+									"Hannes Heins",
+									"Owen Satterley",
+									"Auke Toussaint",
+									"Riccardo Donati",
+									"Dadi Hrafn Sveinbjarnarson",
+									"Tom Bold",
+									"Eric Ericson",
+									"Beni Bachmann",
+									"Johannes Gustavsson",
+									"Kevin Naarden"
+								],
+								[
+									"André Svanevik",
+									"Alex Clarke",
+									"Richard Vanmeerbeek",
+									"Rikard Lanner",
+									"TImmy Thernström",
+									"Gigord Yohann",
+									"Robert Manlove",
+									"TImmy Thernström",
+									"Ramon Gysin",
+									"Anders Galaly",
+									"Gigord Yohann",
+									"Adam Shackell",
+								],
+								[
+									"Lacee Kovacs",
+									"Mikko Aronpää",
+									"Frederik Aegidius",
+									"Mareck Bigler",
+									"Númi Snær Katrínarson",
+									"Marcus Herou",
+									"Philip Bengtsson",
+									"James Goulden",
+									"Lukas Högberg",
+									"Jakob Magnússon",
+									"Rob Martin",
+									"Christer Idland"
+								]
+						]
 					},
 					{
 						name: "Womens workout 4",
 						starttime: new Date(2012, 5, 26, 16, 48, 0, 0),
 						heattimelimit: 30,
-						heatcount: 4
+						heatcount: 3,
+						heats: [
+								[
+									"Malin Nyström",
+									"Tea Tähtinen",
+									"Inga Ingadottiir",
+									"Ellie Carter-Silk",
+									"Anne Waage",
+									"Rachel Blumberg",
+									"Julia Carlsson",
+									"Anna Fernette",
+									"Helena Hugosson"
+								],
+								[
+									"Martina Barbaro",
+									"Nicola Simpson",
+									"Lucy Rae",
+									"Naomi Rinsampessy",
+									"Hrund Scheving",
+									"Sara Ellegaard Andreasen",
+									"Nadine Leinweber",
+									"Patricia Strenius",
+									"Elin Hansson"
+								],
+								[
+									"Annie Thorisdottir",
+									"Katrin Tanja Davidsdottir",
+									"Ellinor Rehnström",
+									"Thuridur Erla Helgadottir",
+									"Caroline Fryklund",
+									"Louise Åkesson",
+									"Carla Nunes da Costa",
+									"Hjördís Óskarsdóttir",
+									"Alahna Gibbs",
+									"Anna Hulda Ólafsdóttir"
+								]
+						]
 					}
 				]
 	},
