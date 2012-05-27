@@ -807,13 +807,56 @@
 						name: "Team workout 6",
 						starttime: new Date(2012, 5, 27, 12, 33, 0, 0),
 						heattimelimit: 30,
-						heatcount: 1
+						heatcount: 1,
+						heats: [
+								[
+									"CrossFit Reykjavík",
+									"CrossFit Sport",
+									"Team Butchers Lab",
+									"Team Butchers Garage",
+									"CrossFit Bath",
+									"CrossFit Nordic 1",
+									"Team DC",
+									"Spartans Warriors",
+									"Team CFH Iceland",
+									"Landstuhl CrossFit",
+									"French Invictus Team",
+									"CrossFit Malmö The Other guys"
+								]
+						]
 					},
 					{
 						name: "Womens workout 6",
 						starttime: new Date(2012, 5, 27, 13, 18, 0, 0),
 						heattimelimit: 30,
-						heatcount: 3
+						heatcount: 3,
+						heats: [
+								[
+									"Hrund Scheving",
+									"Sara Ellegaard Andreasen",
+									"Anna Hulda Ólafsdóttir",
+									"Patricia Strenius",
+									"Inga Ingadottiir",
+									"Elin Hansson"
+								],
+								[
+									"Carla Nunes da Costa",
+									"Alahna Gibbs",
+									"Martina Barbaro",
+									"Hjördís Óskarsdóttir",
+									"Nadine Leinweber",
+									"Nicola Simpson"
+								],
+								[
+									"Annie Thorisdottir",
+									"Katrin Tanja Davidsdottir",
+									"Thuridur Erla Helgadottir",
+									"Ellinor Rehnström",
+									"Louise Åkesson",
+									"Caroline Fryklund"
+								]
+						]
+
 					},
 					{
 						name: "Mens workout 6",
