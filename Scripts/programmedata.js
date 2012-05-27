@@ -862,7 +862,34 @@
 						name: "Mens workout 6",
 						starttime: new Date(2012, 5, 27, 15, 3, 0, 0),
 						heattimelimit: 30,
-						heatcount: 3
+						heatcount: 3,
+						heats: [
+								[
+									"Richard Vanmeerbeek",
+									"Ramon Gysin",
+									"Anders Galaly",
+									"Marcus Herou",
+									"Robert Manlove",
+									"Dadi Hrafn Sveinbjarnarson"
+								],
+								[
+									"Christer Idland",
+									"James Goulden",
+									"Rob Martin",
+									"Mareck Bigler",
+									"Alex Clarke",
+									"Riccardo Donati"
+								],
+								[
+									"Frederik Aegidius",
+									"Mikko Aronpää",
+									"Lacee Kovacs",
+									"Númi Snær Katrínarson",
+									"Jakob Magnússon",
+									"Lukas Högberg"
+								]
+						]
+
 					}
 				]
 	}
