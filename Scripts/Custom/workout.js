@@ -1,4 +1,4 @@
-﻿function showWorkout(urlObj, options) {
+function showWorkout(urlObj, options) {
 	var workoutType = urlObj.hash.replace(/.*type=/, "");
 
 	var workout = workouts[workoutType];

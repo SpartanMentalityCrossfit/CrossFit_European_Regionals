@@ -1,4 +1,4 @@
-ï»¿function showProgramme(urlObj, options) {
+function showProgramme(urlObj, options) {
 	var dayName = urlObj.hash.replace(/.*day=/, "");
 
 	var dayProgramme = programme[dayName];
@@ -40,7 +40,7 @@
 				for (var k = 0; k < workout.heats.length; k++) {
 					var heat = workout.heats[k];
 
-					var isSpartan = $.inArray("Spartans Warriors", heat) != -1 || $.inArray("Anders Galaly", heat) != -1;
+					var isSpartan = $.inArray("Team Spartan Mentality", heat) != -1 || $.inArray("Sveina Björk Karlsdóttir", heat) != -1;
 
 					contentMarkup += "<div data-role=\"collapsible\"" + (isSpartan ? "data-theme=\"b\"" : "") + ">";
 
