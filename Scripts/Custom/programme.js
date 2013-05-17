@@ -1,4 +1,4 @@
-function showProgramme(urlObj, options) {
+﻿function showProgramme(urlObj, options) {
 	var dayName = urlObj.hash.replace(/.*day=/, "");
 
 	var dayProgramme = programme[dayName];
@@ -21,15 +21,6 @@ function showProgramme(urlObj, options) {
 		for (var i = 0; i < workouts.length; i++) {
 			var workout = workouts[i];
 
-			var workoutStart = workout.starttime;
-
-			//var workoutEnd = new Date(workoutStart);
-			//workoutEnd.setMinutes(workout.heatcount * workout.heattimelimit);
-
-			//var currentDate = new Date();
-
-			//var isCurrentWorkout = workoutStart <= currentDate && currentDate <= workoutEnd;
-
 			contentMarkup += "<div data-role=\"collapsible\"" + /*(isCurrentWorkout ? "data-collapsed=\"false\"" : "") +*/ ">";
 
 			var minutes = workout.starttime.getMinutes() < 10 ? "0" + workout.starttime.getMinutes() : workout.starttime.getMinutes();
@@ -37,7 +28,9 @@ function showProgramme(urlObj, options) {
 			contentMarkup += "<h4>" + workout.name + " (" + workout.starttime.getHours() + ":" + minutes + ")</h4>";
 
 			for (var k = 0; k < workout.heatcount; k++) {
-				var isSpartan = workout.spartanHeat === (k + 1);
+				var heat = workout.heats[k];
+
+				var isSpartan = heat && heat.names && (findString(heat.names, "Team Spartan Mentality") != -1 || findString(heat.names, "Sveina Björk Karlsdóttir") != -1);
 
 				contentMarkup += "<div data-role=\"collapsible\" " + (isSpartan ? "data-theme=\"b\"" : "") + ">";
 
@@ -53,6 +46,16 @@ function showProgramme(urlObj, options) {
 					var endTime = findTime(heatStartTime, workoutLength, 1);
 
 					contentMarkup += "<h3>Heat " + (k + 1) + " (" + startTime + " - " + endTime + ")</h3>";
+				}
+				
+				if (heat.names) {
+					contentMarkup += "<table>";
+
+					for (var j = 0; j < heat.names.length; j++) {
+						contentMarkup += "<tr><td>" + heat.names[j] + "</td></tr>";
+					}
+
+					contentMarkup += "</table>";
 				}
 
 				contentMarkup += "</div>";
@@ -74,6 +77,18 @@ function showProgramme(urlObj, options) {
 
 		$.mobile.changePage($page, options);
 	}
+}
+
+function findString(elements, searchString) {
+	if (!elements)
+		return -1;
+
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i] === searchString)
+			return i;
+	}
+
+	return -1;
 }
 
 function findTime(inputDate, heattimelimit, round) {
