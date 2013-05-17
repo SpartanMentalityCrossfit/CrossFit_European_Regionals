@@ -23,47 +23,39 @@ function showProgramme(urlObj, options) {
 
 			var workoutStart = workout.starttime;
 
-			var workoutEnd = new Date(workoutStart);
-			workoutEnd.setMinutes(workout.heatcount * workout.heattimelimit);
+			//var workoutEnd = new Date(workoutStart);
+			//workoutEnd.setMinutes(workout.heatcount * workout.heattimelimit);
 
-			var currentDate = new Date();
+			//var currentDate = new Date();
 
-			var isCurrentWorkout = workoutStart <= currentDate && currentDate <= workoutEnd;
+			//var isCurrentWorkout = workoutStart <= currentDate && currentDate <= workoutEnd;
 
-			contentMarkup += "<div data-role=\"collapsible\"" + (isCurrentWorkout ? "data-collapsed=\"false\"" : "") + ">";
+			contentMarkup += "<div data-role=\"collapsible\"" + /*(isCurrentWorkout ? "data-collapsed=\"false\"" : "") +*/ ">";
 
 			var minutes = workout.starttime.getMinutes() < 10 ? "0" + workout.starttime.getMinutes() : workout.starttime.getMinutes();
 
 			contentMarkup += "<h4>" + workout.name + " (" + workout.starttime.getHours() + ":" + minutes + ")</h4>";
 
-			if (workout.heats) {
-				for (var k = 0; k < workout.heats.length; k++) {
-					var heat = workout.heats[k];
+			for (var k = 0; k < workout.heatcount; k++) {
+				var isSpartan = workout.spartanHeat === (k + 1);
 
-					var isSpartan = $.inArray("Team Spartan Mentality", heat) != -1 || $.inArray("Sveina Björk Karlsdóttir", heat) != -1;
+				contentMarkup += "<div data-role=\"collapsible\" " + (isSpartan ? "data-theme=\"b\"" : "") + ">";
 
-					contentMarkup += "<div data-role=\"collapsible\"" + (isSpartan ? "data-theme=\"b\"" : "") + ">";
-
+				if (workout.heattimelimit) {
 					contentMarkup += "<h3>Heat " + (k + 1) + " (" + findTime(workout.starttime, workout.heattimelimit, k) + " - " + findTime(workout.starttime, workout.heattimelimit, k + 1) + ")</h3>";
+				} else {
+					var heatData = workout.heats[k];
 
-					contentMarkup += "<table><tbody>";
+					var heatStartTime = heatData.heatStartTime;
+					var workoutLength = heatData.workoutLength;
 
-					for (var l = 0; l < heat.length; l++) {
-						contentMarkup += "<tr><td>" + heat[l] + "</td></tr>";
-					}
+					var startTime = findTime(heatStartTime, workoutLength, 0);
+					var endTime = findTime(heatStartTime, workoutLength, 1);
 
-					contentMarkup += "</tbody></table>";
-
-					contentMarkup += "</div>";
-				}
-			} else {
-				contentMarkup += "<table><tbody>";
-				
-				for (var j = 0; j < workout.heatcount; j++) {
-					contentMarkup += "<tr><td>Heat " + (j + 1) + "</td><td>" + findTime(workout.starttime, workout.heattimelimit, j) + " - " + findTime(workout.starttime, workout.heattimelimit, j + 1) + "</td></tr>";
+					contentMarkup += "<h3>Heat " + (k + 1) + " (" + startTime + " - " + endTime + ")</h3>";
 				}
 
-				contentMarkup += "</tbody></table>";
+				contentMarkup += "</div>";
 			}
 			
 			contentMarkup += "</div>";
